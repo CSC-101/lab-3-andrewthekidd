@@ -2,7 +2,7 @@ def tally(nums:list[int]) -> int:
     total = 0
     for num in nums:
         total = total + num           # Record each value of total and num at the end of the loop body.
-    return total                        #value of total: 16, num 1
+    return total                        #value of total: [0, 4, 13, 15, 16] num 1
 
 result = tally([4, 9, 2, 1])
 
@@ -17,7 +17,8 @@ result = copy([4, 9, 2, 1])
 def increment_all(nums:list[int]) -> list[int]:
     new_list = []
     for value in nums:
-        new_list.append(value + 1)                  # Record each value of new_list and value at the end of the loop body. new list: [], [5], [5, 10], value = 2
+        new_list.append(value + 1)                  # Record each value of new_list and value at the end of the loop body. new list: [], [5], [5, 10], [5, 10, 3, 2]
     return new_list
 
 result = increment_all([4, 9, 2, 1])
+# [5, 10, 3, 2]
